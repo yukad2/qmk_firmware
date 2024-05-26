@@ -19,7 +19,7 @@ AUDIO_ENABLE = no           # Audio output
 # Duplex matrix.
 CUSTOM_MATRIX = lite
 SRC += lib/duplexmatrix/duplexmatrix.c
-# Reex67Mod is split keyboard.
+# Reex56Mod is split keyboard.
 SPLIT_KEYBOARD = yes
 
 # Optical sensor driver for trackball.

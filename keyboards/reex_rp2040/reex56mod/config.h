@@ -5,10 +5,10 @@
 
 // USB Device descriptor parameters
 //#define VENDOR_ID           0x3938
-//#define PRODUCT_ID          0x5236
+//#define PRODUCT_ID          0x5235
 //#define DEVICE_VER          0x0001
 //#define MANUFACTURER        kushima8
-//#define PRODUCT             Reex67mod
+//#define PRODUCT             Reex56mod
 
 /* key matrix size */
 #define MATRIX_ROWS         (6 * 2)  // split keyboard
@@ -61,8 +61,8 @@
 // RGB LED settings
 #define WS2812_DI_PIN       D3
 #ifdef RGBLIGHT_ENABLE
-#    define RGBLED_NUM      75
-#    define RGBLED_SPLIT    { 33, 42 }
+#    define RGBLED_NUM      64
+#    define RGBLED_SPLIT    { 32, 32 }
 #    ifndef RGBLIGHT_LIMIT_VAL
 #        define RGBLIGHT_LIMIT_VAL  100 // limitated for power consumption
 #    endif
@@ -77,7 +77,7 @@
 #    endif
 #endif
 #ifdef RGB_MATRIX_ENABLE
-#    define RGB_MATRIX_SPLIT    { 33, 42 }
+#    define RGB_MATRIX_SPLIT    { 32, 32 }
 #endif
 
 #ifndef OLED_FONT_H
@@ -95,17 +95,17 @@
 #undef LOCKING_RESYNC_ENABLE
 
 #ifdef RGBLIGHT_ENABLE
-// #    define RGBLIGHT_EFFECT_BREATHING
-// #    define RGBLIGHT_EFFECT_RAINBOW_MOOD
-// #    define RGBLIGHT_EFFECT_RAINBOW_SWIRL
-// #    define RGBLIGHT_MODE_SNAKE
-// #    define RGBLIGHT_MODE_KNIGHT
-// #    define RGBLIGHT_MODE_CHRISTMAS
-// #    define RGBLIGHT_MODE_STATIC_GRADIENT
-// #    define RGBLIGHT_EFFECT_RGB_TEST
-// #    define RGBLIGHT_MODE_ALTERNATING
-// #    define RGBLIGHT_MODE_TWINKLE
+//#    define RGBLIGHT_EFFECT_BREATHING
+//#    define RGBLIGHT_EFFECT_RAINBOW_MOOD
+//#    define RGBLIGHT_EFFECT_RAINBOW_SWIRL
+//#    define RGBLIGHT_MODE_SNAKE
+//#    define RGBLIGHT_MODE_KNIGHT
+//#    define RGBLIGHT_MODE_CHRISTMAS
+//#    define RGBLIGHT_MODE_STATIC_GRADIENT
+//#    define RGBLIGHT_EFFECT_RGB_TEST
+//#    define RGBLIGHT_MODE_ALTERNATING
+//#    define RGBLIGHT_MODE_TWINKLE
 #endif
 
 #define TAP_CODE_DELAY 5
-#define REEX_SCROLLSNAP_ENABLE 0
+

@@ -5,29 +5,18 @@
 
 // USB Device descriptor parameters
 //#define VENDOR_ID           0x3938
-//#define PRODUCT_ID          0x5236
+//#define PRODUCT_ID          0x3637
 //#define DEVICE_VER          0x0001
 //#define MANUFACTURER        kushima8
-//#define PRODUCT             Reex67mod
+//#define PRODUCT             Reex67
 
 /* key matrix size */
-#define MATRIX_ROWS         (6 * 2)  // split keyboard
+#define MATRIX_ROWS         (5 * 2)  // split keyboard
 #define MATRIX_COLS         (4 * 2)  // duplex matrix
-#define MATRIX_ROW_PINS     { D4, C6, D7, E6, B4, F6 }
+#define MATRIX_ROW_PINS     { D4, C6, D7, E6, B4 }
 #define MATRIX_COL_PINS     { B5, F4, F5, B6 }
 #define MATRIX_MASKED
 #define DEBOUNCE            5
-
-#define ENCODERS_PAD_A { B2 }
-#define ENCODERS_PAD_B { B3 }
-#define ENCODER_RESOLUTION 4
-//#define ENCODERS_PAD_A_RIGHT { B3 }
-//#define ENCODERS_PAD_B_RIGHT { B2 }
-//#define ENCODER_RESOLUTIONS_RIGHT { 4 }
-#define ENCODER_MAP_KEY_DELAY 10
-
-#define DIP_SWITCH_PINS { B1 }
-//#define DIP_SWITCH_PINS_RIGHT { F7 }
 
 #define POINTING_DEVICE_AUTO_MOUSE_ENABLE
 #define AUTO_MOUSE_DEFAULT_LAYER 3
@@ -95,17 +84,17 @@
 #undef LOCKING_RESYNC_ENABLE
 
 #ifdef RGBLIGHT_ENABLE
-// #    define RGBLIGHT_EFFECT_BREATHING
-// #    define RGBLIGHT_EFFECT_RAINBOW_MOOD
-// #    define RGBLIGHT_EFFECT_RAINBOW_SWIRL
-// #    define RGBLIGHT_MODE_SNAKE
-// #    define RGBLIGHT_MODE_KNIGHT
-// #    define RGBLIGHT_MODE_CHRISTMAS
-// #    define RGBLIGHT_MODE_STATIC_GRADIENT
-// #    define RGBLIGHT_EFFECT_RGB_TEST
-// #    define RGBLIGHT_MODE_ALTERNATING
-// #    define RGBLIGHT_MODE_TWINKLE
+#    define RGBLIGHT_EFFECT_BREATHING
+#    define RGBLIGHT_EFFECT_RAINBOW_MOOD
+#    define RGBLIGHT_EFFECT_RAINBOW_SWIRL
+#    define RGBLIGHT_MODE_SNAKE
+#    define RGBLIGHT_MODE_KNIGHT
+#    define RGBLIGHT_MODE_CHRISTMAS
+#    define RGBLIGHT_MODE_STATIC_GRADIENT
+#    define RGBLIGHT_EFFECT_RGB_TEST
+#    define RGBLIGHT_MODE_ALTERNATING
+#    define RGBLIGHT_MODE_TWINKLE
 #endif
 
 #define TAP_CODE_DELAY 5
-#define REEX_SCROLLSNAP_ENABLE 0
+
